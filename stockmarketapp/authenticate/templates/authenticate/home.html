@@ -1,0 +1,35 @@
+{% extends 'authenticate/base.html' %}
+
+{% block content %}
+
+<h1 class="text-6xl font-semibold">Welcome To stock apps</h1>
+<br><br>
+
+  <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex shadow-6xl" role="alert">
+    <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3 animate-ping">Live</span>
+    <span class="font-semibold mr-2 text-left flex-auto"><b>NIFTY 50-</b><i>1178.40</i><p class="text-lg font-medium">Open</p>
+    	<p>11753.30</p><p class="text-lg font-medium">High</p><p>11366.25</p><p class="text-lg font-medium">Low</p><p>11111.45</p></span>
+    <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3 animate-ping">Live</span>
+    <span class="font-semibold mr-2 text-left flex-auto"><b>BSE-</b><i>37,877.34</i><p class="text-lg font-medium">Open</p>
+    	<p>38,432.94</p><p class="text-lg font-medium">High</p><p>38,540.57</p><p class="text-lg font-medium">Low</p><p>37,654.92</p></span>
+    <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+  </div>
+
+<br>
+<br>
+<br>
+
+{% if user.is_authenticated %}
+	
+	<p class="text-3xl"><span class="font-medium">Name:</span> {{ user.first_name }} {{ user.last_name }}</p>
+	<p class="text-3xl"><span class="font-medium">Username:</span> {{ user.username}}</p>
+	<p class="text-3xl"><span class="font-medium">Email:</span> {{ user.email }}</p>
+	
+
+
+
+
+{% endif %}
+
+
+{% endblock %}
