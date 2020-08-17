@@ -28,4 +28,6 @@ This Web app basically login users and registers new users to the stock web app.
 ##  B. Accessing it globally:
 ### *Error occured during deployment globally, so use it locally.*
 
+# USAGE:
 
+![My Video](https://user-images.githubusercontent.com/34749185/90383864-5c869580-e09e-11ea-893e-90aa942fad43.gif)
